@@ -36,15 +36,15 @@ jekyll 적용
 ## 테마 적용
 
 ### 테마 선택
-<http://jekyllthemes.org/>에서 테마를 선택
+<http://jekyllthemes.org/>에서 테마를 선택  
 [WahtATheme](http://jekyllthemes.org/themes/what-a-theme/ "테마") 를 선택
 
 ### 테마 적용 과정
-[WahtATheme저장소](https://github.com/thedevslot/WhatATheme "테마") 에서 `git clone`
-post 폴더를 제외한 테마 덮어쓰기
+[WahtATheme저장소](https://github.com/thedevslot/WhatATheme "테마") 에서 `git clone`  
+post 폴더를 제외한 테마 덮어쓰기  
 `git add`로 적용
 
 ## Post Upload
-Markdown 형식을 통해 내용작성
-`git commit` 후, 원격저장소로 `git push`
+Markdown 형식을 통해 내용작성  
+`git commit` 후, 원격저장소로 `git push`  
 업로드 완료!
