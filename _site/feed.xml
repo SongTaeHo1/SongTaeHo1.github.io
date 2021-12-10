@@ -1,37 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-10T19:53:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Blog</title><subtitle>Have a Good Day!</subtitle><entry><title type="html">MongoDB 정리!</title><link href="http://localhost:4000/blog/TITLE" rel="alternate" type="text/html" title="MongoDB 정리!" /><published>2021-11-13T20:54:22+09:00</published><updated>2021-11-13T20:54:22+09:00</updated><id>http://localhost:4000/blog/TITLE</id><content type="html" xml:base="http://localhost:4000/blog/TITLE">&lt;h2 id=&quot;mongodb가-js를-사용해서-얻은-특징&quot;&gt;MongoDB가 JS를 사용해서 얻은 특징&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;웹개발자에게 쉬운 입문이 가능하다.&lt;/li&gt;
-  &lt;li&gt;BSON 자료형을 사용&lt;/li&gt;
-  &lt;li&gt;내부 명령어를 JS 형식으로 사용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;mongodb의-crud&quot;&gt;MongoDB의 CRUD&lt;/h2&gt;
-
-&lt;h3 id=&quot;mongodb의-기본구조&quot;&gt;MongoDB의 기본구조&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;데이터베이스 (← database)&lt;/li&gt;
-  &lt;li&gt;컬렉션(← table)&lt;/li&gt;
-  &lt;li&gt;도큐먼트(← row)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;document--bsonbinary-json-자료구조&quot;&gt;Document → BSON(Binary JSON) 자료구조&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# import python-mongo module
-&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pymongo&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# create connection between DB and Script
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pymongo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MongoClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;mongodb://localhost:27017&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# acces database (if not exist, create one!)
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;db&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_database&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;testDB&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# access collection under database
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_collection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;testCollection&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;#INSERT data in collection
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;insert_one&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;hello&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;world&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><category term="" /><summary type="html">MongoDB가 JS를 사용해서 얻은 특징 웹개발자에게 쉬운 입문이 가능하다. BSON 자료형을 사용 내부 명령어를 JS 형식으로 사용</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-11-13T20:12:32+09:00</published><updated>2021-11-13T20:12:32+09:00</updated><id>http://localhost:4000/blog/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/welcome-to-jekyll">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-10T20:16:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Blog</title><subtitle>Have a Good Day!</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-11-13T20:12:32+09:00</published><updated>2021-11-13T20:12:32+09:00</updated><id>http://localhost:4000/blog/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/welcome-to-jekyll">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
