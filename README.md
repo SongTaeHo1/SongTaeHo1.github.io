@@ -42,7 +42,8 @@ jekyll 적용
 ### 테마 적용 과정
 [WahtATheme저장소](https://github.com/thedevslot/WhatATheme "테마") 에서 `git clone`  
 post 폴더를 제외한 테마 덮어쓰기  
-`git add`로 적용
+config.yml파일 내용 수정  
+`git commit` 후, 원격저장소로 `git push`로 적용
 
 ## Post Upload
 Markdown 형식을 통해 내용작성  
