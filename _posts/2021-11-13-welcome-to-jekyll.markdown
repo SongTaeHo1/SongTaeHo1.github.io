@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+post-image: "https://raw.githubusercontent.com/SongTaeHo1/SongTaeHo1.github.io/master/%EC%9D%B4%EB%AF%B8%EC%A7%80.webp"
 date:   2021-11-13 20:12:32 +0900
 categories: jekyll update
 ---
